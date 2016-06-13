@@ -1,0 +1,48 @@
+
+<div id="wanle">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/wl-lb1.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/wl-lb2.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/wl-lb3.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="wl-bn">
+    <img src="images/wl1.png" class="wl-bn1" alt="">
+    <img src="images/wl2.png" alt="">
+  </div>
+  <div class="wl-line"></div>
+
+  <div class="wl-time">
+    <span>今天</span>
+  </div>
+  <div class="wl-imgs">
+    <div ng-repeat="v in wanleListToday">
+      <a href=""><img src="{{v.image}}" alt=""></a>
+    </div>
+    <div class="wl-time">
+      <span>昨天</span>
+    </div>
+    <div ng-repeat="v in wanleListYesterday">
+      <a href=""><img src="{{v.image}}" alt=""></a>
+    </div>
+  </div>
+</div>
+
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+  loop: true,
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: 2500,
+  autoplayDisableOnInteraction: false
+})
+</script>

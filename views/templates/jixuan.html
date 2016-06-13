@@ -1,0 +1,41 @@
+<!-- 精选 -->
+<div id="jingxuan">
+  <div class="jx1" ng-repeat="v in jixuanListXiaotu">
+    <div class="jx-wenzi">
+      <ul class="jx-xx">
+        <li class="jx-logo"><img src="{{v.touxiang}}" alt=""></li>
+        <li class="jx-fabu">
+          <span class="jx-author iconfont .icon-xuanzhong">{{v.huati}}</span>
+          <span class="jx-time">{{v.time}}</span>
+        </li>
+        <li class="jx-laiyuan"><span>{{v.laiyuan}}</span></li>
+      </ul>
+      <div class="jx-neirong"><a href="">{{v.neirong}}</a></div>
+    </div>
+    <div class="jx-img"><img src="{{v.image}}" alt=""></div>
+    <ul class="jx-zan">
+      <li><span class="jx-yd iconfont icon-yuedu">{{v.yuedu}}</span></li>
+      <li><span class="jx-pl iconfont icon-anzhuo34">{{v.pinglun}}</span></li>
+      <li><span class="jx-ding iconfont icon-zan">{{v.zan}}</span></li>
+    </ul>
+  </div>
+  <div class="jx-line"></div>
+  <div class="jx2" ng-repeat="v in jixuanListDatu">
+    <div class="jx-wenzi">
+      <ul class="jx-xx">
+        <li class="jx-logo"><img src="{{v.touxiang}}" alt=""></li>
+        <li class="jx-fabu">
+          <span class="jx-author iconfont .icon-xuanzhong">{{v.huati}}</span>
+          <span class="jx-time">{{v.time}}</span>
+        </li>
+        <li class="jx-laiyuan"><span>{{v.laiyuan}}</span></li>
+      </ul>
+      <div class="jx-neirong"><a href="">{{v.neirong}}</a></div>
+    </div>
+    <div class="jx-img doudou"><img src="{{v.image}}" alt=""></div>
+    <ul class="jx-zan">
+      <li><span class="jx-yd iconfont icon-yuedu">{{v.yuedu}}</span></li>
+      <li><span class="jx-pl iconfont icon-anzhuo34">{{v.pinglun}}</span></li>
+      <li><span class="jx-ding iconfont icon-zan">{{v.zan}}</span></li>
+    </ul>
+  </div>

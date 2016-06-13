@@ -1,0 +1,42 @@
+<div id="redian">
+  <div class="zaobao">
+    <img src="images/zaobao.png" alt="">
+    <span>早报</span>
+    <i></i>
+  </div>
+  <div class="rd-line"></div>
+  <ul class="hot-spots">
+    <div class="rd-line"></div>
+    <li class="rd1" ng-repeat="v in redianList">
+      <a href="#"></a>
+      <span class="title rd-title">{{v.title}}</span>
+      <span class="laiyuan">{{v.laiyuan}}</span>
+      <img src="{{v.image}}" class="rd-img" alt="">
+    </li>
+    <div class="rd-line"></div>
+    <li class="rd2" ng-repeat="v in redianListWenzi">
+      <a href=""></a>
+      <span class="title title2">{{v.title}}</span>
+      <span class="laiyuan">{{v.laiyuan}}</span>
+    </li>
+    <div class="rd-line"></div>
+
+    <li class="rd4" ng-repeat="v in redianListBig">
+      <a href=""></a>
+      <span class="title">{{v.title}}</span>
+      <img src="{{v.image}}" alt="">
+    </li>
+    <div class="rd-line"></div>
+
+    <li class="rd7" ng-repeat="v in redianListSmall">
+      <a href="#"></a>
+      <span class="title">{{v.title}}</span>
+      <div class="ry">
+        <img src="{{v.image1}}" alt="">
+        <img src="{{v.image2}}" alt="">
+        <img src="{{v.image3}}" alt="">
+      </div>
+    </li>
+
+  </ul>
+</div>

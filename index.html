@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="zaker">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ZAKER</title>
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/jquery.js" charset="utf-8"></script>
+  <script src="./js/swiper.jquery.js" charset="utf-8"></script>
+  <script src="./js/angular.js" charset="utf-8"></script>
+  <script src="./js/angular-animate.js" charset="utf-8"></script>
+  <script src="./js/angular-route.js" charset="utf-8"></script>
+  <script src="./js/index.js" charset="utf-8"></script>
+</head>
+<body ng-controller="indexCtrl">
+  <!-- <zaker-yindao></zaker-yindao> -->
+  <zaker-top-bar></zaker-top-bar>
+  <zaker-hyq></zaker-hyq>
+  <ng-view></ng-view>
+  <zaker-tab-bar></zaker-tab-bar>
+  <!-- <zaker-car-bar></zaker-car-bar> -->
+
+</body>
+</html>

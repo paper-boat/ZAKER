@@ -1,0 +1,37 @@
+<div id="dingyue">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/lunbo11.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/lunbo12.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/lunbo13.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/lunbo14.png" alt="">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <ul class="dy-imgs">
+    <li ng-repeat="v in dingyueList"><a href="{{v.href}}"><img src="{{v.image}}" alt=""></a></li>
+  </ul>
+
+</div>
+
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+  loop: true,
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: 2500,
+  autoplayDisableOnInteraction: false
+
+})
+</script>

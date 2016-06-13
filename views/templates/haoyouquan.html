@@ -1,0 +1,53 @@
+
+<!-- 好友圈 -->
+
+<div id="haoyouquan">
+  <div class="sq-denglu">
+    <div class="sq-denglu-center">
+      <img src="images/sq1.png" alt="">
+      <span class="sq-denglu-title">登录查看我的好友圈动态</span>
+      <span class="sq-icon"></span>
+    </div>
+  </div>
+  <div class="hyq-line"></div>
+  <div class="jx1" ng-repeat="v in haoyouquanList">
+    <div class="jx-wenzi">
+      <ul class="jx-xx">
+        <li class="jx-logo"><img src="{{v.touxiang}}" alt=""></li>
+        <li class="jx-fabu">
+          <span class="jx-author iconfont .icon-xuanzhong">{{v.author}}</span>
+          <span class="jx-time">{{v.time}}</span>
+        </li>
+        <li class="hyq-gz"><span>+ 关注</span></li>
+      </ul>
+      <div class="jx-neirong"><a href="">{{v.neirong}}</a></div>
+    </div>
+    <div class="hyq-img car"><img src="{{v.image}}" alt=""></div>
+    <ul class="jx-zan">
+      <li><span class="jx-yd iconfont icon-yuedu">{{v.yuedu }}</span></li>
+      <li><span class="jx-pl iconfont icon-anzhuo34">{{v.pinglun}}</span></li>
+      <li><span class="jx-ding iconfont icon-zan">{{v.zan}}</span></li>
+    </ul>
+  </div>
+  <div class="hyq-line-cu"></div>
+  <div class="jx1" ng-repeat="v in haoyouquanListWenzi">
+    <div class="jx-wenzi">
+      <ul class="jx-xx">
+        <li class="jx-logo"><img src="{{v.touxiang}}" alt=""></li>
+        <li class="jx-fabu">
+          <span class="jx-author iconfont .icon-xuanzhong">{{v.author}}</span>
+          <span class="jx-time">{{v.time}}</span>
+        </li>
+        <li class="hyq-gz"><span>+ 关注</span></li>
+      </ul>
+      <div class="jx-neirong"><a href="">{{v.neirong}}</a></div>
+    </div>
+    <ul class="jx-zan">
+      <li><span class="jx-yd iconfont icon-yuedu">{{v.yuedu }}</span></li>
+      <li><span class="jx-pl iconfont icon-anzhuo34">{{v.pinglun}}</span></li>
+      <li><span class="jx-ding iconfont icon-zan">{{v.zan}}</span></li>
+    </ul>
+  </div>
+  <div class="hyq-line-cu"></div>
+
+</div>
